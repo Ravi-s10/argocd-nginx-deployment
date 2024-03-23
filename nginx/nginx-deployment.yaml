@@ -16,7 +16,7 @@ metadata:
           app: ux
       spec:
         containers:
-         - name: nginx-pod 
-           image: nginx
+         - image: nginx
+           name: nginx
            ports:
              - containerPort: 80
