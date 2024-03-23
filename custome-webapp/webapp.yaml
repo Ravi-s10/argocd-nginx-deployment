@@ -15,6 +15,6 @@ spec:
         app: webapp
     spec:
       containers:
-        - image: docker pull ravis10/24-webapp:latest
+        - image: ravis10/24-webapp:latest
           name: webapp
           
