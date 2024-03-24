@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dir-app
+  labels:
+    app: dir
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: dir
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: dir
+    spec:
+      containers:
+        - image: ravis10/busybox_custome:v1
+          name: busybox-app
+          ports:
+            - containerPort: 80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
