@@ -20,7 +20,7 @@ spec:
         app: dir
     spec:
       containers:
-        - image: ravis10/busybox_custome:v1
+        - image: ravis10/12:latest
           name: busybox-app
           ports:
             - containerPort: 80
